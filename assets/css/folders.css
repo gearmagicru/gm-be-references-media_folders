@@ -1,0 +1,80 @@
+/*!
+ * Значки папок.
+ *
+ * Расширение "Структура медиапапок".
+ * Модуль "Справочники".
+ *
+ * Copyright 2015 Вeб-студия GearMagic
+ * Copyright Anton Tivonenko <anton.tivonenko@gmail.com>
+ * https://gearmagic.ru/license/
+ */
+
+ /* Папка */
+ .gm-references-mediafolders__folder,
+ .x-tree-icon-leaf.gm-references-mediafolders__folder,
+ .x-tree-icon-parent.gm-references-mediafolders__folder { 
+       background-image: url("../images/folders/icon-folder.svg");
+ }
+ .x-grid-tree-node-expanded .x-tree-icon-parent.gm-references-mediafolders__folder { 
+       background-image: url("../images/folders/icon-folder--open.svg"); 
+ }
+
+ /* Папка "Медиафайлы" */
+.gm-references-mediafolders__folder-public,
+.x-tree-icon-leaf.gm-references-mediafolders__folder-public,
+.x-tree-icon-parent.gm-references-mediafolders__folder-public { 
+    background-image: url("../images/folders/icon-folder_public.svg");
+}
+.x-grid-tree-node-expanded .x-tree-icon-parent.gm-references-mediafolders__folder-public { 
+    background-image: url("../images/folders/icon-folder_public--open.svg"); 
+}
+
+ /* Папка "Видео" */
+.gm-references-mediafolders__folder-video,
+.x-tree-icon-leaf.gm-references-mediafolders__folder-video,
+.x-tree-icon-parent.gm-references-mediafolders__folder-video { 
+     background-image: url("../images/folders/icon-folder_video.svg");
+}
+.x-grid-tree-node-expanded .x-tree-icon-parent.gm-references-mediafolders__folder-video { 
+     background-image: url("../images/folders/icon-folder_video--open.svg"); 
+}
+
+ /* Папка "Аудио" */
+ .gm-references-mediafolders__folder-audio,
+.x-tree-icon-leaf.gm-references-mediafolders__folder-audio,
+.x-tree-icon-parent.gm-references-mediafolders__folder-audio { 
+     background-image: url("../images/folders/icon-folder_audio.svg");
+}
+.x-grid-tree-node-expanded .x-tree-icon-parent.gm-references-mediafolders__folder-audio { 
+     background-image: url("../images/folders/icon-folder_audio--open.svg"); 
+}
+
+ /* Папка "Изображения" */
+.gm-references-mediafolders__folder-images,
+.x-tree-icon-leaf.gm-references-mediafolders__folder-images,
+.x-tree-icon-parent.gm-references-mediafolders__folder-images { 
+      background-image: url("../images/folders/icon-folder_images.svg");
+}
+.x-grid-tree-node-expanded .x-tree-icon-parent.gm-references-mediafolders__folder-images { 
+      background-image: url("../images/folders/icon-folder_images--open.svg"); 
+}
+
+ /* Папка "Документы" */
+.gm-references-mediafolders__folder-docs,
+.x-tree-icon-leaf.gm-references-mediafolders__folder-docs,
+.x-tree-icon-parent.gm-references-mediafolders__folder-docs { 
+      background-image: url("../images/folders/icon-folder_docs.svg");
+}
+.x-grid-tree-node-expanded .x-tree-icon-parent.gm-references-mediafolders__folder-docs { 
+      background-image: url("../images/folders/icon-folder_docs--open.svg"); 
+}
+
+/* Папка "Настройки" */
+.gm-references-mediafolders__folder-config,
+.x-tree-icon-leaf.gm-references-mediafolders__folder-config,
+.x-tree-icon-parent.gm-references-mediafolders__folder-config { 
+    background-image: url("../images/folders/icon-folder_config.svg");
+}
+.x-grid-tree-node-expanded .x-tree-icon-parent.gm-references-mediafolders__folder-config { 
+    background-image: url("../images/folders/icon-folder_config--open.svg"); 
+}
