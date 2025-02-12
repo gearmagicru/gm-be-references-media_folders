@@ -1,0 +1,109 @@
+[
+    {
+        "xtype": "numberfield",
+        "minValue": "1",
+        "maxValue": "100",
+        "value": "1",
+        "width": 200,
+        "name": "index",
+        "fieldLabel": "#Index",
+        "tooltip": "#Index number"
+    },
+    {
+        "xtype": "textfield",
+        "fieldLabel": "#Name",
+        "tooltip": "#Media folder name",
+        "name": "name",
+        "anchor": "100%",
+        "allowBlank": false
+    },
+    {
+        "xtype": "textfield",
+        "name": "breadcrumb",
+        "fieldLabel": "#Breadcrumb",
+        "tooltip": "#Breadcrumb element title",
+        "anchor": "100%"
+    },
+    {
+        "xtype": "textfield",
+        "name": "alias",
+        "fieldLabel": "#Alias",
+        "tooltip": "#An alias always begins with an \"@\" symbol",
+        "emptyText": "@alias",
+        "anchor": "100%",
+        "allowBlank": false
+    },
+    {
+        "xtype": "textfield",
+        "name": "path",
+        "fieldLabel": "#Path",
+        "tooltip": "#Local path to a directory (folder)",
+        "anchor": "100%",
+        "allowBlank": true
+    },
+    {
+        "xtype": "g-field-combobox",
+        "fieldLabel": "#Profile",
+        "tooltip": "#Folder profile name",
+        "name": "profileId",
+        "anchor": "100%",
+        "hiddenName": "profileId",
+        "store": {
+            "fields": ["id", "name"],
+            "proxy": {
+                "type": "ajax",
+                "url": ["@backend/references/folder-profiles/trigger/combo"],
+                "extraParams": {"combo": "profiles"},
+                "reader": {
+                    "type": "json",
+                    "rootProperty": "data"
+                }
+            }
+        },
+        "displayField": "name",
+        "valueField": "id",
+        "editable": false,
+        "allowBlank": false
+    },
+    {
+        "xtype": "fieldset",
+        "title": "#Icon",
+        "defaults": {
+            "labelWidth": 140,
+            "labelAlign": "right",
+            "anchor": "100%"
+        },
+        "items": [
+            "@comboSmallIcons",
+            "@comboIcons",
+            {
+                "xtype": "combobox",
+                "fieldLabel": "#Icon CSS",
+                "name": "asIconCls",
+                "hiddenField": "asIconCls",
+                "store": {
+                    "fields": ["css", "name"],
+                    "data": [
+                        ["gm-references-mediafolders__folder-public", "Public"], 
+                        ["gm-references-mediafolders__folder-images", "Images"], 
+                        ["gm-references-mediafolders__folder-audio", "Audio"], 
+                        ["gm-references-mediafolders__folder-video", "Video"],
+                        ["gm-references-mediafolders__folder-docs", "Documents"],
+                        ["gm-references-mediafolders__folder-config", "Config"]
+                    ]
+                },
+                "displayField": "name",
+                "valueField": "css",
+                "queryMode": "local",
+                "editable": true
+            }
+        ]
+    },
+    {
+        "xtype": "checkbox",
+        "ui": "switch",
+        "fieldLabel": "#Show",
+        "checked": true,
+        "name": "visible"
+    }
+]
