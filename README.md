@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/gearmagicru/gm-be-references-media_folders/refs/heads/main/assets/images/icon.svg" width="64px" height="64px" align="absmiddle"> Расширение (модуль) панели управления "Медиа диалоги"
+# <img src="https://raw.githubusercontent.com/gearmagicru/gm-be-references-media_folders/refs/heads/main/assets/images/icon.svg" width="64px" height="64px" align="absmiddle"> Расширение (модуль) панели управления "Структура медиапапок"
 
 Справочник профилей настроек отображения медиапапок.
 
