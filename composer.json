@@ -1,14 +1,7 @@
 {
     "name": "gearmagicru/gm-be-references-media_folders",
     "description": "Control Panel extension (module) \"Media folders\"",
-    "keywords": [
-        "gm",
-        "gearmagic",
-        "GM Panel",
-        "extension",
-        "references",
-        "media"
-    ],
+    "keywords": ["gearmagic", "gm-panel", "gm-component", "gm-extension", "extension", "references", "media"],
     "homepage": "https://apps.gearmagic.ru/component/gm-be-references-media_folders",
     "type": "component",
     "license": "MIT",
